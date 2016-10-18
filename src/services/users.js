@@ -2,7 +2,8 @@ import request from '../utils/request';
 import qs from 'qs';
 
 export async function query(params) {
-  // request('/cif/boss/admin/loadMenus',{credentials: 'same-origin'});
+  request('/cif/boss/admin/loadMenus',{credentials: 'same-origin'});
+  request('/api/visit/list',{credentials: 'same-origin'});
   return request(`/api/users?${qs.stringify(params)}`);
 }
 

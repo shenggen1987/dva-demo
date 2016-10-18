@@ -125,6 +125,10 @@ module.exports = {
         page: tableListData.page
       });
     }, 500);
-  }
+  },
+
+  'GET /api/visit/(.*)': 'http://10.1.1.182:8091/mockjsdata/1',
+
+  'GET /cif/boss/(.*)': 'https://devboss4.qjdchina.com',
 
 };
